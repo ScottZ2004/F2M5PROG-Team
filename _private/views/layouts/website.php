@@ -12,7 +12,7 @@
 	<?php endif; ?>
 </head>
 <body>
-<div class="container">
+<div class="">
     <header>
         <h1>Social Responsibility</h1>
     </header>
