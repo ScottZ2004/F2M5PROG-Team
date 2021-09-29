@@ -13,9 +13,6 @@
 </head>
 <body>
 <div class="">
-    <header>
-        <h1>Social Responsibility</h1>
-    </header>
     <nav>
 		<?php if ( $this->section( 'navigation' ) ): ?>
 			<?php echo $this->section( 'navigation' ) ?>
@@ -23,13 +20,14 @@
 			<?php echo $this->fetch( '_navigation' ) ?>
 		<?php endif ?>
     </nav>
+    <header>
+        <h1>Social Responsibility</h1>
+        <img src="images/foto man.png">
+    </header>
     <main>
         <section class="content">
 			<?php echo $this->section( 'content' ) ?>
         </section>
-        <aside>
-			<?php echo $this->section( 'sidebar' ) ?>
-        </aside>
     </main>
     <footer>
         &copy; <?php echo date('Y')?>
