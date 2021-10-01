@@ -1,4 +1,4 @@
-<?php $this->layout('layouts::website');?>
+<?php $this->layout('layouts::layout');?>
 
 <?php $this->start('sidebar')?>
 <!-- Door sections toe te voegen aan je layout kun je deze per pagina aanpassen -->

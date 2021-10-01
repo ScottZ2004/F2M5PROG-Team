@@ -6,16 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Homepage</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php echo site_url( '/css/style.css' ) ?>" media="all">
+    <link rel="stylesheet" href="<?php echo site_url( '/css/style2.css' ) ?>" media="all">
 	<?php if ( $this->section( 'css' ) ): ?>
 		<?php echo $this->section( 'css' ) ?>
 	<?php endif; ?>
 </head>
 <body>
-<div class="container">
-    <header>
-        <h1>Social Responsibility</h1>
-    </header>
+<div class="">
     <nav>
 		<?php if ( $this->section( 'navigation' ) ): ?>
 			<?php echo $this->section( 'navigation' ) ?>
@@ -23,13 +20,18 @@
 			<?php echo $this->fetch( '_navigation' ) ?>
 		<?php endif ?>
     </nav>
+    <header>
+        <div class="item item1"><h1>Social Responsibility</h1></div>
+        <div class="item item2"><?php
+            $image = 'images/foto man.png';
+            $imageData = base64_encode(file_get_contents($image));
+            echo '<img src="data:image/jpeg;base64,'.$imageData.'">';?>
+        </div>
+    </header>
     <main>
         <section class="content">
 			<?php echo $this->section( 'content' ) ?>
         </section>
-        <aside>
-			<?php echo $this->section( 'sidebar' ) ?>
-        </aside>
     </main>
     <footer>
         &copy; <?php echo date('Y')?>
