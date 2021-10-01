@@ -21,8 +21,12 @@
 		<?php endif ?>
     </nav>
     <header>
-        <h1>Social Responsibility</h1>
-        <img src="images/foto man.png">
+        <div class="item item1"><h1>Social Responsibility</h1></div>
+        <div class="item item2"><?php
+            $image = 'images/foto man.png';
+            $imageData = base64_encode(file_get_contents($image));
+            echo '<img src="data:image/jpeg;base64,'.$imageData.'">';?>
+        </div>
     </header>
     <main>
         <section class="content">

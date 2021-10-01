@@ -11,9 +11,12 @@ main {
 }
 
 header {
+    display: grid;
     padding: 20px;
     background: rgba(86, 38, 202);
     color: #fff;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "item1 item2";
 }
 
 header h1 {
